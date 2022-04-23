@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgHotel1"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hotel1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel1"
+                android:layout_marginLeft="12dp"
+                android:text="Nama hotel"
+                android:id="@+id/namaHotel"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel1"
+                android:layout_marginLeft="12dp"
+                android:text="Deskripsi"
+                android:layout_below="@+id/namaHotel"
+                android:id="@+id/deskripsiHotel"
+                android:textSize="13sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel1"
+                android:layout_marginLeft="12dp"
+                android:text="Harga"
+                android:layout_below="@+id/deskripsiHotel"
+                android:id="@+id/hargaHotel"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:id="@+id/imgHotel2"
+                android:src="@drawable/hotel2"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/imgHotel1"
+                android:padding="12dp"/>
+            <Button
+                android:id="@+id/namaHotel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haeundae Marianne Hotel"
+                android:gravity="bottom"
+                android:onClick="pindah"
+                android:layout_below="@id/hargaHotel"
+                android:layout_marginTop="133dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/imgHotel2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel2"
+                android:layout_marginLeft="12dp"
+                android:text="Deskripsi"
+                android:layout_below="@+id/namaHotel2"
+                android:id="@+id/deskripsiHotel2"
+                android:textSize="13sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel2"
+                android:layout_marginLeft="12dp"
+                android:text="Harganya 300 ribu"
+                android:layout_below="@+id/deskripsiHotel2"
+                android:id="@+id/hargaHotel2"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/hotel3"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/imgHotel2"
+                android:padding="12dp"
+                android:id="@+id/imgHotel3"/>
+            <Button
+                android:id="@+id/namaHotel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Indonesia"
+                android:gravity="bottom"
+                android:onClick="pindah"
+                android:layout_below="@id/hargaHotel"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/imgHotel3"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel2"
+                android:layout_marginLeft="12dp"
+                android:text="Deskripsi"
+                android:layout_below="@+id/namaHotel3"
+                android:id="@+id/deskripsiHotel3"
+                android:textSize="13sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgHotel3"
+                android:layout_marginLeft="12dp"
+                android:text="Harganya 300 ribu"
+                android:layout_below="@+id/deskripsiHotel3"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

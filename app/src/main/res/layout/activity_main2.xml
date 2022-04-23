@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kembali"
+            android:layout_gravity="top"
+            android:onClick="kembali"
+            android:layout_marginRight="0dp"
+            android:id="@+id/button1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deshotel1"
+            android:text="Haenduae Marianne Hotel"
+            android:textSize="30sp"
+            android:layout_marginTop="250dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namahotel1"
+            android:text="Harga untuk 1 malam, 2 dewasa"
+
+            android:textSize="30sp"
+            android:layout_marginTop="0dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/namahotel1"
+            android:text="KRW 63,000"
+            android:textSize="30sp"
+            android:layout_marginTop="300dp"
+            android:textStyle="bold"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/hotel2"
+                    android:src="@drawable/hotel2"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="80dp"
+                    android:layout_below="@id/button1"
+                    android:padding="2dp"/>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/hotel3"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="80dp"
+                    android:padding="12dp"/>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/hotel4"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="80dp"
+                    android:padding="12dp"/>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/Hotel2"
+                    android:src="@drawable/hotel5"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="80dp"
+                    android:padding="12dp"/>
+
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
